@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Исполнители</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/bg.jpg'); /* Фон - изображение звезд */
+            background-size: cover;
+            background-position: center;
+            color: white; /* Весь текст белый */
+        }
+        header, nav, footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #FF7518; /* Цвет навигации - тыквенный */
+        }
+        nav a.active {
+            font-weight: bold;
+        }
+        .artist-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .artist-card {
+            background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон */
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            margin: 20px;
+            text-align: center;
+        }
+        .artist-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            cursor: pointer; /* Указатель при наведении */
+        }
+        .artist-card h3 {
+            margin-top: 10px;
+            font-size: 1.5em;
+            color: #FF7518;
+        }
+        .artist-card p {
+            font-size: 1em;
+            color: white;
+        }
+        .artist-caption {
+            font-size: 0.8em;
+            font-style: italic;
+            color: #cccccc; /* Цвет для контраста с фоном */
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Musibrary - Исполнители</h1>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="albums.html">Альбомы</a>
+        <a href="genres.html">Жанры</a>
+        <a href="artists.html" class="active">Исполнители</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="https://t.me/ItsOyster" target="_blank">Связаться с автором</a>
+    </nav>
+</header>
+
+<!-- Раздел с исполнителями -->
+<section class="artist-section">
+    <!-- Карточка JPEGMAFIA -->
+    <div class="artist-card">
+        <a href="https://www.youtube.com/watch?v=UKDiMPq4hk0" target="_blank">
+            <img src="images/artist_jpegmafia.jpg" alt="JPEGMAFIA">
+        </a>
+        <p class="artist-caption">Выступление в Нью-Йорке, 2019 год</p>
+        <h3>JPEGMAFIA</h3>
+        <p>Американский рэпер и продюсер, известен своим экспериментальным подходом к хип-хопу, объединяя элементы панка, индастриала и экспериментальной музыки.</p>
+    </div>
+
+    <!-- Карточка Death Grips -->
+    <div class="artist-card">
+        <a href="https://www.youtube.com/watch?v=k32saaAKwjo" target="_blank">
+            <img src="images/artist_deathgrips.jpg" alt="Death Grips">
+        </a>
+        <p class="artist-caption">Выступление в Честерфилде, 2023 год</p>
+        <h3>Death Grips</h3>
+        <p>Экспериментальная хип-хоп группа из Калифорнии, известная своим агрессивным стилем, смешивающим рэп, электронную музыку и панк.</p>
+    </div>
+
+    <!-- Карточка Xiu Xiu -->
+    <div class="artist-card">
+        <a href="https://www.youtube.com/watch?app=desktop&v=NUVzWN_Nhd4" target="_blank">
+            <img src="images/artist_xiuxiu.jpg" alt="Xiu Xiu">
+        </a>
+        <p class="artist-caption">Выступление в Лондоне, 2023 год</p>
+        <h3>Xiu Xiu</h3>
+        <p>Американская экспериментальная группа, известная своими мрачными и эмоциональными композициями, исследующими темы депрессии и социальной критики.</p>
+    </div>
+
+    <!-- Карточка Injury Reserve -->
+    <div class="artist-card">
+        <a href="https://www.youtube.com/watch?v=e3m5Tcxmvtw" target="_blank">
+            <img src="images/artist_injuryreserve.jpg" alt="Injury Reserve">
+        </a>
+        <p class="artist-caption">Выступление в Лос-Анджелесе, 2018 год</p>
+        <h3>Injury Reserve</h3>
+        <p>Хип-хоп трио из Аризоны, экспериментирующее с продакшеном и текстами, создавая уникальное сочетание звука и лирики.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Musibrary</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musibrary - Главная</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/bg.jpg'); /* Фон - изображение звезд */
+            background-size: cover;
+            background-position: center;
+            color: white; /* Весь текст белый */
+        }
+        header, nav, footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #FF7518; /* Цвет навигации - тыквенный */
+        }
+        nav a.active {
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 2em;
+        }
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .thumbnail {
+            width: 100px;
+            height: auto;
+            cursor: pointer;
+        }
+        .cat-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .logo {
+            width: 1900px; /* Логотип во весь экран */
+            height: 340px;
+            object-fit: cover; /* Масштабирование логотипа */
+            display: block;
+            margin: 0 auto;
+        }
+        .back-to-top {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #FF7518;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .button-album-of-the-day {
+            display: block;
+            margin: 20px auto; /* Центрируем кнопку */
+            padding: 10px 20px;
+            background-color: #FF7518;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 1.2em;
+            width: fit-content; /* Устанавливаем ширину по содержимому */
+    </style>
+</head>
+<body>
+
+<!-- Единая навигационная часть -->
+<header>
+    <h1>Musibrary</h1>
+    <nav>
+        <a href="index.html" class="active">Главная</a>
+        <a href="albums.html">Альбомы</a>
+        <a href="genres.html">Жанры</a>
+        <a href="artists.html">Исполнители</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="https://t.me/ItsOyster" target="_blank">Связаться с автором</a>
+    </nav>
+</header>
+
+<!-- Логотип во весь экран -->
+<img src="images/logo.png" alt="Логотип Musibrary" class="logo">
+
+<!-- Изображение на всю ширину экрана -->
+<div class="hero-image"></div>
+
+<!-- Описание сайта -->
+<section id="description" class="content">
+    <h2>О Musibrary</h2>
+    <p>Добро пожаловать на Musibrary – место, где встречаются музыка и библиотека. Этот сайт создан специально для всех любителей музыки, которые стремятся находить и исследовать новые альбомы для прослушивания. Мы верим, что музыка – это искусство, которое нужно изучать и ценить, и Musibrary предлагает вам удобную платформу для этого.</p>
+
+    <p>На нашем сайте вы сможете легко находить новые альбомы, будь то современные хиты или классические произведения. Мы собрали для вас разнообразные жанры, чтобы каждый мог найти что-то по своему вкусу. Если вы искали место для расширения своей музыкальной коллекции, Musibrary – именно то, что вам нужно.</p>
+
+    <h3>Навигация по сайту</h3>
+    <p>Musibrary имеет удобную и интуитивно понятную навигацию, которая позволит вам с лёгкостью находить нужную информацию. Вот что вы можете найти на нашем сайте:</p>
+    <ul>
+        <li><strong>Альбомы:</strong> Страница, где собраны различные музыкальные альбомы с описаниями и подробной информацией.</li>
+        <li><strong>Жанры:</strong> Раздел, который поможет вам ориентироваться в многообразии музыкальных жанров и выбрать то, что вам по душе.</li>
+        <li><strong>Контакты:</strong> Если у вас возникли вопросы, вы можете легко связаться с нами через страницу контактов.</li>
+    </ul>
+    <a href="albums.html#album-of-the-day" class="button-album-of-the-day">К альбому дня</a>
+</section>
+
+<!-- Миниатюра котика -->
+<section class="cat-section">
+    <h3>Фото котика</h3>
+    <a href="images/large_cat.jpg" target="_blank">
+        <img src="images/large_cat.jpg" alt="Миниатюра котика" class="thumbnail">
+    </a>
+</section>
+
+<a href="#top" class="back-to-top">К началу</a>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Musibrary</p>
+</footer>
+
+</body>
+</html>

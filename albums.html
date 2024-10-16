@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Альбомы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/bg.jpg'); /* Фон - изображение звезд */
+            background-size: cover;
+            background-position: center;
+            color: white; /* Весь текст белый */
+        }
+        header, nav, footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #FF7518;
+        }
+        nav a.active {
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-image: url('backgrounds/tabl.jpg'); /* Фон всей таблицы */
+            background-size: cover;
+            background-position: center;
+        }
+        th, td {
+            border: 1px solid white; /* Белые границы таблицы */
+            padding: 10px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0);
+            font-size: 1.2em;
+        }
+        table img {
+            width: 200px; /* Установленный размер обложки */
+            height: auto;
+        }
+        /* Устанавливаем одинаковую ширину для каждого столбца */
+        .album-title {
+            font-size: 1.5em;
+            width: 25%; /* Ширина столбца для названия альбома */
+        }
+        .author, .date, .duration, .genre, .secondary-genre, .link {
+            width: 15%; /* Одинаковая ширина для остальных столбцов */
+        }
+        .back-to-top {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #FF7518;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Единая навигационная часть -->
+<header>
+    <h1>Musibrary - Альбомы</h1>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="albums.html" class="active">Альбомы</a>
+        <a href="genres.html">Жанры</a>
+        <a href="artists.html">Исполнители</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="https://t.me/ItsOyster" target="_blank">Связаться с автором</a>
+    </nav>
+</header>
+
+<!-- Таблица с альбомами -->
+<section id="table-section">
+    <h2>Таблица с альбомами</h2>
+    <table>
+        <tr>
+            <th>Альбом</th>
+            <th>Автор</th>
+            <th>Дата выхода</th>
+            <th>Продолжительность</th>
+            <th>Основной жанр</th>
+            <th>Второстепенный жанр</th>
+            <th>Ссылка</th>
+            <th>Изображение</th>
+        </tr>
+        <tr>
+            <td class="album-title">Confession of Lazarus</td>
+            <td class="author">Diabarha</td>
+            <td>2021</td>
+            <td>9:09:38</td>
+            <td>Speedcore</td>
+            <td class="secondary-genre">Dark Ambient</td>
+            <td><a href="https://rateyourmusic.com/release/album/diabarha/confession-of-lazarus/" target="_blank">Подробнее</a></td>
+            <td><a href="https://rateyourmusic.com/release/album/diabarha/confession-of-lazarus/" target="_blank">
+                <img src="Covers/confession_of_lazarus.jpg" alt="Обложка альбома Confession Of Lazarus"></a></td>
+        </tr>
+        <tr>
+            <td class="album-title">Soundtrack for the Blind</td>
+            <td class="author">Swans</td>
+            <td>1996</td>
+            <td>2:22:00</td>
+            <td>Experimental Rock</td>
+            <td class="secondary-genre">Post-Rock</td>
+            <td><a href="https://rateyourmusic.com/release/album/swans/soundtracks-for-the-blind/" target="_blank">Подробнее</a></td>
+            <td><a href="https://rateyourmusic.com/release/album/swans/soundtracks-for-the-blind/" target="_blank">
+                <img src="Covers/soundtrack_for_the_blind.jpg" alt="Обложка альбома Soundtrack for the Blind"></a></td>
+        </tr>
+        <tr>
+            <td class="album-title">Visions of Bodies Being Burned</td>
+            <td class="author">clipping.</td>
+            <td>2020</td>
+            <td>52:00</td>
+            <td>Industrial Hip-Hop</td>
+            <td class="secondary-genre">Noise</td>
+            <td><a href="https://rateyourmusic.com/release/album/clipping/visions-of-bodies-being-burned/" target="_blank">Подробнее</a></td>
+            <td><a href="https://rateyourmusic.com/release/album/clipping/visions-of-bodies-being-burned/" target="_blank">
+                <img src="Covers/visions_of_bodies_being_burned.jpg" alt="Обложка альбома Visions of Bodies Being Burned"></a></td>
+        </tr>
+        <tr>
+            <td class="album-title">Codeine & Pizza</td>
+            <td class="author">Chris Travis</td>
+            <td>2012</td>
+            <td>52:00</td>
+            <td>Cloud Rap</td>
+            <td class="secondary-genre">Trap</td>
+            <td><a href="https://rateyourmusic.com/release/mixtape/chris-travis/codeine-and-pizza/" target="_blank">Подробнее</a></td>
+            <td><a href="https://rateyourmusic.com/release/mixtape/chris-travis/codeine-and-pizza/" target="_blank">
+                <img src="Covers/pizza_and_codeine.jpg" alt="Обложка альбома Pizza and Codeine"></a></td>
+        </tr>
+        <tr>
+            <td class="album-title">Foxing</td>
+            <td class="author">Foxing</td>
+            <td>2024</td>
+            <td>52:00</td>
+            <td>Indie Rock</td>
+            <td class="secondary-genre">Emo</td>
+            <td><a href="https://rateyourmusic.com/release/album/foxing/foxing/" target="_blank">Подробнее</a></td>
+            <td><a href="https://rateyourmusic.com/release/album/foxing/foxing/" target="_blank">
+                <img src="Covers/foxing.jpg" alt="Обложка альбома Foxing"></a></td>
+        </tr>
+    </table>
+</section>
+
+<!-- Новая таблица "Альбом дня" -->
+<section id="album-of-the-day">
+    <h2>Альбом дня</h2>
+    <table>
+        <tr>
+            <th>Альбом</th>
+            <th>Автор</th>
+            <th>Дата выхода</th>
+            <th>Продолжительность</th>
+            <th>Основной жанр</th>
+            <th>Второстепенный жанр</th>
+            <th>Ссылка</th>
+            <th>Изображение</th>
+        </tr>
+        <tr>
+            <td class="album-title">I Want to Be There</td>
+            <td class="author">Sadness</td>
+            <td>2019</td>
+            <td>40:33</td>
+            <td>Blackgaze</td>
+            <td class="secondary-genre">Ambient</td>
+            <td><a href="https://rateyourmusic.com/release/album/sadness/i-want-to-be-there/" target="_blank">Подробнее</a></td>
+            <td>
+                <a href="https://rateyourmusic.com/release/album/sadness/i-want-to-be-there/" target="_blank">
+                    <img src="Covers/i_want_to_be_there.jpg" alt="Обложка альбома I Want to Be There">
+                </a>
+            </td>
+        </tr>
+    </table>
+</section>
+<a href="#top" class="back-to-top">К началу</a>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Musibrary</p>
+</footer>
+
+</body>
+</html>
