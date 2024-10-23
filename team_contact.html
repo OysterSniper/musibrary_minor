@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Связаться с командой</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        header, nav, footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #FF7518;
+        }
+        nav a.active {
+            font-weight: bold;
+        }
+        .form-container {
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            width: 50%;
+        }
+        label, input, select {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="tel"], input[type="email"], input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #FF7518;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Musibrary - Связаться с командой</h1>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="albums.html">Альбомы</a>
+        <a href="genres.html">Жанры</a>
+        <a href="artists.html">Исполнители</a>
+        <a href="javascript.html">Задача</a>
+        <a href="passport.html">Паспорт</a>
+        <a href="contacts.html">Предложить музыку</a>
+        <a href="team_contact.html" class="active">Связаться с командой</a>
+        <a href="https://t.me/ItsOyster" target="_blank">Связаться с автором</a>
+    </nav>
+</header>
+
+<main>
+    <section class="form-container">
+        <h2>Форма для связи с командой</h2>
+        <form id="teamContactForm" action="https://script.google.com/macros/s/AKfycbzr8p-i8gnEPLx541MMN6yGIGo0OET35d_poFrKyDLr-NFUUnHnuqL-8nLpU2Ijtp62Wg/exec" method="POST">
+            <label for="surname">Фамилия:</label>
+            <input type="text" id="surname" name="surname" required><br><br>
+
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="group">Группа:</label>
+            <input type="text" id="group" name="group" required><br><br>
+
+            <label for="phone">Мобильный телефон:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="date">Дата отправки сообщения:</label>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <input type="submit" value="Отправить сообщение">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Musibrary</p>
+</footer>
+
+</body>
+</html>

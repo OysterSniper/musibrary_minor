@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты</title>
+    <title>Предложить музыку</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('images/bg.jpg'); /* Фон - изображение звезд */
+            background-image: url('images/bg.jpg');
             background-size: cover;
             background-position: center;
-            color: white; /* Весь текст белый */
+            color: white;
         }
         header, nav, footer {
             text-align: center;
@@ -19,58 +19,145 @@
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #FF7518; /* Цвет навигации - тыквенный */
+            color: #FF7518;
         }
         nav a.active {
             font-weight: bold;
+        }
+        .form-container {
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            width: 50%;
+        }
+        label, input, select {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="number"], input[type="tel"], input[type="email"], input[type="date"], input[type="password"], select {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #FF7518;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
 
-<!-- Единая навигационная часть -->
 <header>
-    <h1>Musibrary - Контакты</h1>
+    <h1>Musibrary - Предложить музыку</h1>
     <nav>
         <a href="index.html">Главная</a>
         <a href="albums.html">Альбомы</a>
         <a href="genres.html">Жанры</a>
         <a href="artists.html">Исполнители</a>
-        <a href="contacts.html" class="active">Контакты</a>
+        <a href="javascript.html">Задача</a>
+        <a href="passport.html">Паспорт</a>
+        <a href="contacts.html" class="active">Предложить музыку</a>
+        <a href="team_contact.html">Связаться с командой</a>
         <a href="https://t.me/ItsOyster" target="_blank">Связаться с автором</a>
     </nav>
 </header>
 
-<!-- Контактная информация -->
-<section id="section1">
-    <h2>Свяжитесь с нами</h2>
-    <p>Вы можете связаться с нами по следующим контактным данным:</p>
-    <ul>
-        <li>Email: contact@example.com</li>
-        <li>Телефон: +7 (123) 456-7890</li>
-        <li>Адрес: ул. Музыкальная, 5, Москва, Россия</li>
-    </ul>
+<main>
+    <section class="form-container">
+        <h2>Форма для предложения музыки</h2>
+        <form id="musicForm" action="https://script.google.com/macros/s/AKfycbyT8-vrzKNbX3Yk-aC6wfYLz2099wY-OB4F52AsNiFDXsk7Oixh21PKyuNK-q2bO9y6mw/exec" method="POST">
+            <label for="username">Ваше имя:</label>
+            <input type="text" id="username" name="username"><br><br>
 
-    <!-- Форма для отправки контактных данных -->
-    <h3>Отправьте нам сообщение:</h3>
-    <form action="https://yourserver.com/submit" method="post">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" name="name" required><br>
+            <label for="album">Название альбома:</label>
+            <input type="text" id="album" name="album"><br><br>
 
-        <label for="email">Ваш Email:</label>
-        <input type="email" id="email" name="email" required><br>
+            <label for="year">Год выпуска альбома:</label>
+            <input type="number" id="year" name="year" min="1900" max="2024"><br><br>
 
-        <label for="message">Сообщение:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+            <label for="genre-select">Выберите жанр:</label>
+            <select id="genre-select" name="genre">
+                <option value="ambient">Амбиент</option>
+                <option value="blues">Блюз</option>
+                <option value="classical">Классическая музыка</option>
+                <option value="country">Кантри</option>
+                <option value="dance">Танцевальная музыка</option>
+                <option value="easy-listening">Легкая музыка</option>
+                <option value="electronic">Электронная музыка</option>
+                <option value="experimental">Экспериментальная музыка</option>
+                <option value="folk">Фолк</option>
+                <option value="hiphop">Хип-хоп</option>
+                <option value="industrial-noise">Индастриал и Нойз</option>
+                <option value="jazz">Джаз</option>
+                <option value="metal">Метал</option>
+                <option value="musical-theatre">Музыкальный театр и развлечения</option>
+                <option value="new-age">Нью-эйдж</option>
+                <option value="pop">Поп-музыка</option>
+                <option value="psychedelia">Психоделия</option>
+                <option value="punk">Панк</option>
+                <option value="rnb">R&B</option>
+                <option value="reggae">Регги / Ска / Дэнсхолл</option>
+                <option value="regional-music">Региональная музыка</option>
+                <option value="rock">Рок</option>
+                <option value="singer-songwriter">Авторская песня</option>
+                <option value="spoken-word">Спокен ворд</option>
+            </select><br><br>
 
-        <input type="submit" value="Отправить">
-    </form>
-</section>
+            <label for="listened">Вы слушали этот альбом?</label><br>
+            <input type="radio" id="listened_yes" name="listened" value="yes">
+            <label for="listened_yes">Да</label><br>
+            <input type="radio" id="listened_no" name="listened" value="no">
+            <label for="listened_no">Нет</label><br><br>
 
-<!-- Footer -->
+            <label for="suggest_date">Дата предложения:</label>
+            <input type="date" id="suggest_date" name="suggest_date"><br><br>
+
+            <label for="password">Пароль для редактирования предложения:</label>
+            <input type="password" id="password" name="password"><br><br>
+
+            <input type="hidden" name="form_type" value="music_suggestion">
+
+            <input type="submit" value="Предложить альбом">
+        </form>
+    </section>
+</main>
+
 <footer>
     <p>&copy; 2024 Musibrary</p>
 </footer>
+
+<script>
+    document.getElementById('musicForm').addEventListener('submit', function(event) {
+        const defaultValues = {
+            username: 'Гость',
+            album: 'Неизвестный альбом',
+            year: '2024',
+            genre: 'rock',
+            listened: 'no',
+            suggest_date: '2024-01-01',
+            password: 'defaultpass'
+        };
+
+        const form = event.target;
+        for (const key in defaultValues) {
+            const input = form[key];
+            if (input && input.value === '') {
+                input.value = defaultValues[key];
+            }
+        }
+
+        if (!form.listened.value) {
+            form.listened.value = defaultValues.listened;
+        }
+    });
+</script>
 
 </body>
 </html>

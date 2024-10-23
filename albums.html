@@ -7,10 +7,10 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('images/bg.jpg'); /* Фон - изображение звезд */
+            background-image: url('images/bg.jpg');
             background-size: cover;
             background-position: center;
-            color: white; /* Весь текст белый */
+            color: white;
         }
         header, nav, footer {
             text-align: center;
@@ -27,28 +27,28 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            background-image: url('backgrounds/tabl.jpg'); /* Фон всей таблицы */
+            background-image: url('backgrounds/tabl.jpg');
             background-size: cover;
             background-position: center;
         }
         th, td {
-            border: 1px solid white; /* Белые границы таблицы */
+            border: 1px solid white;
             padding: 10px;
             text-align: center;
             background-color: rgba(255, 255, 255, 0);
             font-size: 1.2em;
         }
         table img {
-            width: 200px; /* Установленный размер обложки */
+            width: 200px;
             height: auto;
         }
-        /* Устанавливаем одинаковую ширину для каждого столбца */
+
         .album-title {
             font-size: 1.5em;
-            width: 25%; /* Ширина столбца для названия альбома */
+            width: 25%;
         }
         .author, .date, .duration, .genre, .secondary-genre, .link {
-            width: 15%; /* Одинаковая ширина для остальных столбцов */
+            width: 15%;
         }
         .back-to-top {
             display: block;
@@ -65,7 +65,6 @@
 </head>
 <body>
 
-<!-- Единая навигационная часть -->
 <header>
     <h1>Musibrary - Альбомы</h1>
     <nav>
@@ -73,12 +72,14 @@
         <a href="albums.html" class="active">Альбомы</a>
         <a href="genres.html">Жанры</a>
         <a href="artists.html">Исполнители</a>
-        <a href="contacts.html">Контакты</a>
+        <a href="javascript.html">Задача</a>
+        <a href="passport.html">Паспорт</a>
+        <a href="contacts.html">Предложить музыку</a>
+        <a href="team_contact.html">Связаться с командой</a>
         <a href="https://t.me/ItsOyster" target="_blank">Связаться с автором</a>
     </nav>
 </header>
 
-<!-- Таблица с альбомами -->
 <section id="table-section">
     <h2>Таблица с альбомами</h2>
     <table>
@@ -101,7 +102,7 @@
             <td class="secondary-genre">Dark Ambient</td>
             <td><a href="https://rateyourmusic.com/release/album/diabarha/confession-of-lazarus/" target="_blank">Подробнее</a></td>
             <td><a href="https://rateyourmusic.com/release/album/diabarha/confession-of-lazarus/" target="_blank">
-                <img src="covers/confession_of_lazarus.jpg" alt="Обложка альбома Confession Of Lazarus"></a></td>
+                <img src="Covers/confession_of_lazarus.jpg" alt="Обложка альбома Confession Of Lazarus" title="Confession Of Lazarus"></a></td>
         </tr>
         <tr>
             <td class="album-title">Soundtrack for the Blind</td>
@@ -112,7 +113,7 @@
             <td class="secondary-genre">Post-Rock</td>
             <td><a href="https://rateyourmusic.com/release/album/swans/soundtracks-for-the-blind/" target="_blank">Подробнее</a></td>
             <td><a href="https://rateyourmusic.com/release/album/swans/soundtracks-for-the-blind/" target="_blank">
-                <img src="covers/soundtrack_for_the_blind.jpg" alt="Обложка альбома Soundtrack for the Blind"></a></td>
+                <img src="Covers/soundtrack_for_the_blind.jpg" alt="Обложка альбома Soundtrack for the Blind" title="Soundtrack for the Blind"></a></td>
         </tr>
         <tr>
             <td class="album-title">Visions of Bodies Being Burned</td>
@@ -123,7 +124,7 @@
             <td class="secondary-genre">Noise</td>
             <td><a href="https://rateyourmusic.com/release/album/clipping/visions-of-bodies-being-burned/" target="_blank">Подробнее</a></td>
             <td><a href="https://rateyourmusic.com/release/album/clipping/visions-of-bodies-being-burned/" target="_blank">
-                <img src="covers/visions_of_bodies_being_burned.jpg" alt="Обложка альбома Visions of Bodies Being Burned"></a></td>
+                <img src="Covers/visions_of_bodies_being_burned.jpg" alt="Обложка альбома Visions of Bodies Being Burned" title="Visions of Bodies Being Burned"></a></td>
         </tr>
         <tr>
             <td class="album-title">Codeine & Pizza</td>
@@ -134,7 +135,7 @@
             <td class="secondary-genre">Trap</td>
             <td><a href="https://rateyourmusic.com/release/mixtape/chris-travis/codeine-and-pizza/" target="_blank">Подробнее</a></td>
             <td><a href="https://rateyourmusic.com/release/mixtape/chris-travis/codeine-and-pizza/" target="_blank">
-                <img src="covers/pizza_and_codeine.jpg" alt="Обложка альбома Pizza and Codeine"></a></td>
+                <img src="Covers/pizza_and_codeine.jpg" alt="Обложка альбома Pizza and Codeine" title="Pizza and Codeine"></a></td>
         </tr>
         <tr>
             <td class="album-title">Foxing</td>
@@ -145,12 +146,11 @@
             <td class="secondary-genre">Emo</td>
             <td><a href="https://rateyourmusic.com/release/album/foxing/foxing/" target="_blank">Подробнее</a></td>
             <td><a href="https://rateyourmusic.com/release/album/foxing/foxing/" target="_blank">
-                <img src="covers/foxing.jpg" alt="Обложка альбома Foxing"></a></td>
+                <img src="Covers/foxing.jpg" alt="Обложка альбома Foxing" title="Foxing"></a></td>
         </tr>
     </table>
 </section>
 
-<!-- Новая таблица "Альбом дня" -->
 <section id="album-of-the-day">
     <h2>Альбом дня</h2>
     <table>
@@ -174,7 +174,7 @@
             <td><a href="https://rateyourmusic.com/release/album/sadness/i-want-to-be-there/" target="_blank">Подробнее</a></td>
             <td>
                 <a href="https://rateyourmusic.com/release/album/sadness/i-want-to-be-there/" target="_blank">
-                    <img src="covers/i_want_to_be_there.jpg" alt="Обложка альбома I Want to Be There">
+                    <img src="Covers/i_want_to_be_there.jpg" alt="Обложка альбома I Want to Be There" title="I Want to Be There">
                 </a>
             </td>
         </tr>
@@ -182,7 +182,6 @@
 </section>
 <a href="#top" class="back-to-top">К началу</a>
 
-<!-- Footer -->
 <footer>
     <p>&copy; 2024 Musibrary</p>
 </footer>
