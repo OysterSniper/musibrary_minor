@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "title": "Horse Rotorvator",
+        "description": "Мрачный альбом от Coil",
+        "price": 500,
+        "img": "covers/horse_rotorvator.jpg",
+        "vendor_code": "HR001"
+    },
+    {
+        "id": 2,
+        "title": "Twerkn 10 Cellph0ne$",
+        "description": "Экспериментальный хип-хоп альбом от $B K R 4 Y (Bl4ckKr4y)",
+        "price": 400,
+        "img": "covers/10_cell.jpg",
+        "vendor_code": "TC002"
+    },
+    {
+        "id": 3,
+        "title": "Cold Visions",
+        "description": "Эмоциональный альбом от Bladee",
+        "price": 450,
+        "img": "covers/cold_visions.jpg",
+        "vendor_code": "CV003"
+    },
+    {
+        "id": 4,
+        "title": "Minecraft: Volume Beta",
+        "description": "Саундтрек к культовой игре от C418",
+        "price": 550,
+        "img": "covers/minecraft.jpg",
+        "vendor_code": "MC004"
+    },
+    {
+        "id": 5,
+        "title": "The Glow Pt. 2",
+        "description": "Классика инди-рока от The Microphones",
+        "price": 600,
+        "img": "covers/glow.jpg",
+        "vendor_code": "TG005"
+    },
+    {
+        "id": 6,
+        "title": "MONKEY",
+        "description": "Современный экспериментальный звук от onlinemonkey",
+        "price": 300,
+        "img": "covers/monkey.jpg",
+        "vendor_code": "MK006"
+    },
+    {
+        "id": 7,
+        "title": "wickera",
+        "description": "Меланхолия и красота от rubyred",
+        "price": 350,
+        "img": "covers/wickera.jpg",
+        "vendor_code": "WK007"
+    }
+]

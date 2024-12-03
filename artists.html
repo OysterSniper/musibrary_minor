@@ -16,13 +16,28 @@
             text-align: center;
             margin-bottom: 20px;
         }
+        h1 {
+            font-size: 1.5em;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0;
+        }
         nav a {
-            margin: 0 15px;
             text-decoration: none;
             color: #FF7518;
+            font-size: 0.9em;
+            white-space: nowrap;
         }
+
         nav a.active {
             font-weight: bold;
+        }
+        nav a:hover {
+            color: #FF4500;
         }
         .artist-section {
             display: flex;
@@ -70,6 +85,7 @@
         <a href="albums.html">Альбомы</a>
         <a href="genres.html">Жанры</a>
         <a href="artists.html" class="active">Исполнители</a>
+        <a href="repeating_content.html">Заказать</a>
         <a href="javascript.html">Задача</a>
         <a href="passport.html">Паспорт</a>
         <a href="contacts.html">Предложить музыку</a>

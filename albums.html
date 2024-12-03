@@ -11,18 +11,40 @@
             background-size: cover;
             background-position: center;
             color: white;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
         }
         header, nav, footer {
             text-align: center;
             margin-bottom: 20px;
         }
+        h1 {
+            font-size: 1.5em;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0;
+        }
         nav a {
-            margin: 0 15px;
             text-decoration: none;
             color: #FF7518;
+            font-size: 0.9em;
+            white-space: nowrap;
         }
+
         nav a.active {
             font-weight: bold;
+        }
+        nav a:hover {
+            color: #FF4500;
+        }
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 0 auto;
         }
         table {
             width: 100%;
@@ -42,14 +64,6 @@
             width: 200px;
             height: auto;
         }
-
-        .album-title {
-            font-size: 1.5em;
-            width: 25%;
-        }
-        .author, .date, .duration, .genre, .secondary-genre, .link {
-            width: 15%;
-        }
         .back-to-top {
             display: block;
             margin: 20px auto;
@@ -61,9 +75,26 @@
             text-decoration: none;
             font-size: 1.2em;
         }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.2em;
+                margin: 10px 10px;
+            }
+            .table-wrapper {
+                padding: 0 10px;
+            }
+            th, td {
+                font-size: 0.8em;
+            }
+            table img {
+                width: 100px;
+            }
+        }
     </style>
 </head>
 <body>
+
 
 <header>
     <h1>Musibrary - Альбомы</h1>
@@ -72,6 +103,7 @@
         <a href="albums.html" class="active">Альбомы</a>
         <a href="genres.html">Жанры</a>
         <a href="artists.html">Исполнители</a>
+        <a href="repeating_content.html">Заказать</a>
         <a href="javascript.html">Задача</a>
         <a href="passport.html">Паспорт</a>
         <a href="contacts.html">Предложить музыку</a>
@@ -82,28 +114,29 @@
 
 <section id="table-section">
     <h2>Таблица с альбомами</h2>
-    <table>
-        <tr>
-            <th>Альбом</th>
-            <th>Автор</th>
-            <th>Дата выхода</th>
-            <th>Продолжительность</th>
-            <th>Основной жанр</th>
-            <th>Второстепенный жанр</th>
-            <th>Ссылка</th>
-            <th>Изображение</th>
-        </tr>
-        <tr>
-            <td class="album-title">Confession of Lazarus</td>
-            <td class="author">Diabarha</td>
-            <td>2021</td>
-            <td>9:09:38</td>
-            <td>Speedcore</td>
-            <td class="secondary-genre">Dark Ambient</td>
-            <td><a href="https://rateyourmusic.com/release/album/diabarha/confession-of-lazarus/" target="_blank">Подробнее</a></td>
-            <td><a href="https://rateyourmusic.com/release/album/diabarha/confession-of-lazarus/" target="_blank">
-                <img src="covers/confession_of_lazarus.jpg" alt="Обложка альбома Confession Of Lazarus" title="Confession Of Lazarus"></a></td>
-        </tr>
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <th>Альбом</th>
+                <th>Автор</th>
+                <th>Дата выхода</th>
+                <th>Продолжительность</th>
+                <th>Основной жанр</th>
+                <th>Второстепенный жанр</th>
+                <th>Ссылка</th>
+                <th>Изображение</th>
+            </tr>
+            <tr>
+                <td class="album-title">Confession of Lazarus</td>
+                <td class="author">Diabarha</td>
+                <td>2021</td>
+                <td>9:09:38</td>
+                <td>Speedcore</td>
+                <td class="secondary-genre">Dark Ambient</td>
+                <td><a href="https://rateyourmusic.com/release/album/diabarha/confession-of-lazarus/" target="_blank">Подробнее</a></td>
+                <td><a href="https://rateyourmusic.com/release/album/diabarha/confession-of-lazarus/" target="_blank">
+                    <img src="covers/confession_of_lazarus.jpg" alt="Обложка альбома Confession Of Lazarus" title="Confession Of Lazarus"></a></td>
+            </tr>
         <tr>
             <td class="album-title">Soundtrack for the Blind</td>
             <td class="author">Swans</td>
@@ -149,36 +182,39 @@
                 <img src="covers/foxing.jpg" alt="Обложка альбома Foxing" title="Foxing"></a></td>
         </tr>
     </table>
+
 </section>
 
 <section id="album-of-the-day">
     <h2>Альбом дня</h2>
-    <table>
-        <tr>
-            <th>Альбом</th>
-            <th>Автор</th>
-            <th>Дата выхода</th>
-            <th>Продолжительность</th>
-            <th>Основной жанр</th>
-            <th>Второстепенный жанр</th>
-            <th>Ссылка</th>
-            <th>Изображение</th>
-        </tr>
-        <tr>
-            <td class="album-title">I Want to Be There</td>
-            <td class="author">Sadness</td>
-            <td>2019</td>
-            <td>40:33</td>
-            <td>Blackgaze</td>
-            <td class="secondary-genre">Ambient</td>
-            <td><a href="https://rateyourmusic.com/release/album/sadness/i-want-to-be-there/" target="_blank">Подробнее</a></td>
-            <td>
-                <a href="https://rateyourmusic.com/release/album/sadness/i-want-to-be-there/" target="_blank">
-                    <img src="covers/i_want_to_be_there.jpg" alt="Обложка альбома I Want to Be There" title="I Want to Be There">
-                </a>
-            </td>
-        </tr>
-    </table>
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <th>Альбом</th>
+                <th>Автор</th>
+                <th>Дата выхода</th>
+                <th>Продолжительность</th>
+                <th>Основной жанр</th>
+                <th>Второстепенный жанр</th>
+                <th>Ссылка</th>
+                <th>Изображение</th>
+            </tr>
+            <tr>
+                <td class="album-title">I Want to Be There</td>
+                <td class="author">Sadness</td>
+                <td>2019</td>
+                <td>40:33</td>
+                <td>Blackgaze</td>
+                <td class="secondary-genre">Ambient</td>
+                <td><a href="https://rateyourmusic.com/release/album/sadness/i-want-to-be-there/" target="_blank">Подробнее</a></td>
+                <td>
+                    <a href="https://rateyourmusic.com/release/album/sadness/i-want-to-be-there/" target="_blank">
+                        <img src="covers/i_want_to_be_there.jpg" alt="Обложка альбома I Want to Be There" title="I Want to Be There">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
 </section>
 <a href="#top" class="back-to-top">К началу</a>
 

@@ -12,17 +12,32 @@
             background-position: center;
             color: white;
         }
+        h1 {
+            font-size: 1.5em;
+        }
         header, nav, footer {
             text-align: center;
             margin-bottom: 20px;
         }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0;
+        }
         nav a {
-            margin: 0 15px;
             text-decoration: none;
             color: #FF7518;
+            font-size: 0.9em;
+            white-space: nowrap;
         }
+
         nav a.active {
             font-weight: bold;
+        }
+        nav a:hover {
+            color: #FF4500;
         }
         .content {
             padding: 20px;
@@ -45,9 +60,10 @@
             margin-top: 50px;
         }
         .logo {
-            width: 1900px;
-            height: 340px;
-            object-fit: cover;
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            object-fit: contain;
             display: block;
             margin: 0 auto;
         }
@@ -73,6 +89,7 @@
             text-decoration: none;
             font-size: 1.2em;
             width: fit-content;
+        }
     </style>
 </head>
 <body>
@@ -84,6 +101,7 @@
         <a href="albums.html">Альбомы</a>
         <a href="genres.html">Жанры</a>
         <a href="artists.html">Исполнители</a>
+        <a href="repeating_content.html">Заказать</a>
         <a href="javascript.html">Задача</a>
         <a href="passport.html">Паспорт</a>
         <a href="contacts.html">Предложить музыку</a>
@@ -93,7 +111,6 @@
 </header>
 
 <img src="images/logo.png" alt="Логотип Musibrary" class="logo">
-
 
 <section id="description" class="content">
     <h2>О Musibrary</h2>

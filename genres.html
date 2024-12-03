@@ -12,17 +12,32 @@
             background-position: center;
             color: white;
         }
+        h1 {
+            font-size: 1.5em;
+        }
         header, nav, footer {
             text-align: center;
             margin-bottom: 20px;
         }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0;
+        }
         nav a {
-            margin: 0 15px;
             text-decoration: none;
             color: #FF7518;
+            font-size: 0.9em;
+            white-space: nowrap;
         }
+
         nav a.active {
             font-weight: bold;
+        }
+        nav a:hover {
+            color: #FF4500;
         }
         section {
             padding: 20px 40px;
@@ -47,6 +62,7 @@
         <a href="albums.html">Альбомы</a>
         <a href="genres.html" class="active">Жанры</a>
         <a href="artists.html">Исполнители</a>
+        <a href="repeating_content.html">Заказать</a>
         <a href="javascript.html">Задача</a>
         <a href="passport.html">Паспорт</a>
         <a href="contacts.html">Предложить музыку</a>

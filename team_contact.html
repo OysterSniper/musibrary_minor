@@ -16,20 +16,37 @@
             text-align: center;
             margin-bottom: 20px;
         }
+        h1 {
+            font-size: 1.5em;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0;
+        }
         nav a {
-            margin: 0 15px;
             text-decoration: none;
             color: #FF7518;
+            font-size: 0.9em;
+            white-space: nowrap;
         }
+
         nav a.active {
             font-weight: bold;
         }
+        nav a:hover {
+            color: #FF4500;
+        }
         .form-container {
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
-            width: 50%;
+            width: 100%;
+            max-width: 557px;
+            box-sizing: border-box;
         }
         label, input, select {
             display: block;
@@ -37,7 +54,7 @@
         }
         input[type="text"], input[type="tel"], input[type="email"], input[type="date"] {
             width: 100%;
-            padding: 10px;
+            padding: 4px;
             border: none;
             border-radius: 5px;
         }
@@ -61,6 +78,7 @@
         <a href="albums.html">Альбомы</a>
         <a href="genres.html">Жанры</a>
         <a href="artists.html">Исполнители</a>
+        <a href="repeating_content.html">Заказать</a>
         <a href="javascript.html">Задача</a>
         <a href="passport.html">Паспорт</a>
         <a href="contacts.html">Предложить музыку</a>
